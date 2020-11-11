@@ -1,20 +1,17 @@
 package com.todoSpringBoot.dto;
 
-import java.time.Instant;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class LoginResponse {
+public class RegisterRequest {
     
-    private String authenticationToken;
-    private String refreshToken;
-    private Instant expiresAt;
+    private String firstname;
+    private String lastname;
     private String username;
+    private String password;
     
 }
