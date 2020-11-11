@@ -8,11 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.Table;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity("refresh_token")
+@Entity
+@Table(name = "refresh_token")
 public class RefreshToken {
     
     @Id

@@ -4,10 +4,9 @@ import com.todoSpringBoot.repository.RefreshTokenRepository;
 import com.todoSpringBoot.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.todoSpringBoot.model.User;
 import com.todoSpringBoot.dto.UpdateUser;
-import java.util.Optional;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import com.todoSpringBoot.model.User;
 
 @Service
 @AllArgsConstructor
@@ -19,7 +18,7 @@ public class UserService {
     private final AuthService authService;
     
     public boolean updateUser(UpdateUser updateUser){
-        User user = userRepository.findByUsername(Optional.of(authService.getCurrentUser().getUsername()));
+        User user = userRepository.findByUsername(authService.getCurrentUser().getUsername()).get();
         
         user.setFirstname(updateUser.getFirstname());
         user.setLastname(updateUser.getLastname());

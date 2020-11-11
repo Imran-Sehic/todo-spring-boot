@@ -1,5 +1,7 @@
 package com.todoSpringBoot.model;
 
+import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,7 +14,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class User {
+public class User implements Serializable{
     
     @Id
     @GeneratedValue(strategy = IDENTITY)
