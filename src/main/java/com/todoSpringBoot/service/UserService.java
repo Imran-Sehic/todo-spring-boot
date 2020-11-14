@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import com.todoSpringBoot.dto.UpdateUser;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import com.todoSpringBoot.model.User;
+import com.todoSpringBoot.dto.RefreshTokenRequest;
 
 @Service
 @AllArgsConstructor
@@ -35,6 +36,7 @@ public class UserService {
         }
         
         userRepository.save(user);
+        
         
         return true;
     }

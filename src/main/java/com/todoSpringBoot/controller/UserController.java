@@ -1,5 +1,6 @@
 package com.todoSpringBoot.controller;
 
+import com.todoSpringBoot.dto.RefreshTokenRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.todoSpringBoot.service.AuthService;
 import com.todoSpringBoot.service.UserService;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/user")
