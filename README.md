@@ -8,6 +8,9 @@ The application contains the following pages:<br>
 * completed todos
 * removed todos
 * user-profile
-* statistics<br>
+* statistics
+
+<!-- -->
+
 The frontend is built using Angular with TypeScript while the database used is MySQL.<br>
 Below are some of the screenshot of the application.<br>
