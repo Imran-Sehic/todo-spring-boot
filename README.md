@@ -12,7 +12,7 @@ The application contains the following pages:<br>
 
 <!-- -->
 
-The frontend is built using Angular with TypeScript while the database used is MySQL.<br>
+The frontend is built using Angular with TypeScript and is available under the following link: <a href="https://github.com/Imran-Sehic/todo-app-angular">Here</a>, while the database used is MySQL.<br>
 Below are some of the screenshot of the application.<br><br>
 ## 1.Login
 <p align="center"><img src="todoScreenshots/todo1.png" width=600></p></br>
